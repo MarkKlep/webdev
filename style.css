@@ -2,3 +2,7 @@ html, body {
     margin: 0;
     font-family: 'Times New Roman';
 }
+
+input:checked + span {
+    text-decoration: line-through;
+}
