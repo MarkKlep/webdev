@@ -2,3 +2,7 @@ html, body {
     margin: 0;
     font-family: 'Times New Roman';
 }
+
+ul {
+    list-style: none; 
+}
