@@ -20,3 +20,11 @@ document.querySelector('.b-1').onclick = () => {
         document.querySelector('.inp-1').value='';
     }
 }
+
+document.querySelector('.b-2').addEventListener('click', ()=>{
+    const data = document.querySelector(".inp-2").value;
+    if(data){
+        document.querySelector(".out-2").textContent = data;
+        document.querySelector(".inp-2").value = '';
+    }
+})
