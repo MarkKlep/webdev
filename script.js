@@ -58,3 +58,25 @@ document.querySelector('.b-6').addEventListener('click', ()=>{
         document.querySelector('.inp-6').checked = true;
     }
 })
+
+document.querySelector('.b-7').addEventListener('click', ()=>{
+    const data = document.querySelector('.inp-7').value;
+    document.querySelector('.out-7').innerHTML = data;
+})
+
+// document.querySelector(".b-7").addEventListener('click', ()=>{
+//     const radio = document.querySelectorAll(".inp-7");
+//     let data;
+//     for(let i=0; i< radio.length; i++) {
+//         if(radio[i].checked) {
+//             data = radio[i].value;
+//             break;
+//         }
+//     }
+//     document.querySelector('.out-7').textContent = data;
+// })
+
+document.querySelector(".b-7").addEventListener('click', ()=>{
+    const data = document.querySelector(".inp-7").value;
+    document.querySelector('.out-7').textContent = data;
+})
