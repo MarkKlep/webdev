@@ -76,8 +76,19 @@ document.querySelector(".b-7").addEventListener('click', ()=>{
     document.querySelector('.out-7').textContent = data;
 })
 
-
 document.querySelector(".s-8").addEventListener('change', ()=>{
     const data = document.querySelector(".s-8").value;
     document.querySelector('.out-8').textContent = data;
 });
+
+document.querySelector('form').addEventListener('submit', e=>{
+    e.preventDefault();
+    const form = document.querySelector('form');
+
+    let data = '';
+    for(let i=0; i< form.elements.length; i++) { 
+        data += form.elements[i].value + '<br>';
+    }
+
+    document.querySelector('.out-9').innerHTML = data;
+})
