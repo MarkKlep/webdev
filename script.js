@@ -46,3 +46,15 @@ document.querySelector('.inp-5').addEventListener('input', ()=>{
     const data = document.querySelector('.inp-5').value;
     document.querySelector('.out-5').innerHTML = data;
 })
+
+document.querySelector('.b-6').addEventListener('click', ()=>{
+    const data = document.querySelector('.inp-6').value;
+    if(document.querySelector('.inp-6').checked) {
+        document.querySelector('.out-6').innerHTML = 'off';
+        document.querySelector('.inp-6').checked = false;
+    } 
+    else {
+        document.querySelector('.out-6').innerHTML = data;
+        document.querySelector('.inp-6').checked = true;
+    }
+})
