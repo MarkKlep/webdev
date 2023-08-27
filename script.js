@@ -64,19 +64,20 @@ document.querySelector('.b-7').addEventListener('click', ()=>{
     document.querySelector('.out-7').innerHTML = data;
 })
 
-// document.querySelector(".b-7").addEventListener('click', ()=>{
-//     const radio = document.querySelectorAll(".inp-7");
-//     let data;
-//     for(let i=0; i< radio.length; i++) {
-//         if(radio[i].checked) {
-//             data = radio[i].value;
-//             break;
-//         }
-//     }
-//     document.querySelector('.out-7').textContent = data;
-// })
-
 document.querySelector(".b-7").addEventListener('click', ()=>{
-    const data = document.querySelector(".inp-7").value;
+    const radio = document.querySelectorAll(".inp-7");
+    let data;
+    for(let i=0; i< radio.length; i++) {
+        if(radio[i].checked) {
+            data = radio[i].value;
+            break;
+        }
+    }
     document.querySelector('.out-7').textContent = data;
 })
+
+
+document.querySelector(".s-8").addEventListener('change', ()=>{
+    const data = document.querySelector(".s-8").value;
+    document.querySelector('.out-8').textContent = data;
+});
