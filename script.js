@@ -40,3 +40,9 @@ document.querySelector('.b-4').addEventListener('click', ()=>{
     if(data)
         document.querySelector('.out-4').innerText = data;
 })
+
+
+document.querySelector('.inp-5').addEventListener('input', ()=>{
+    const data = document.querySelector('.inp-5').value;
+    document.querySelector('.out-5').innerHTML = data;
+})
